@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stroka/main.cpp"
+            timestampString = "559076769.320348"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ReversibleString::~ReversibleString()"
+                  moduleName = "Stroka"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emintagiev/Documents/%D0%A3%D1%87%D0%B5%CC%88%D0%B1%D0%B0/Prorammirovaniye/Coursera_C++_cource_Beliy_Poyas/Week_3/Stroka/Stroka/main.cpp"
+                  timestampString = "559075922.7672811"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ReversibleString::~ReversibleString()"
+                  moduleName = "Stroka"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emintagiev/Documents/%D0%A3%D1%87%D0%B5%CC%88%D0%B1%D0%B0/Prorammirovaniye/Coursera_C++_cource_Beliy_Poyas/Week_3/Stroka/Stroka/main.cpp"
+                  timestampString = "559075922.7711509"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stroka/main.cpp"
+            timestampString = "559076769.320637"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "ReversibleString"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
