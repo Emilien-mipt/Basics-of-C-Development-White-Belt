@@ -17,6 +17,10 @@ string AskTimeServer() {
      * выброс исключения system_error
      * выброс другого исключения с сообщением.
      */
+    string some_string = "Normal string";
+    //throw system_error(error_code());
+    throw runtime_error("Some other exception");
+    return some_string;
 }
 
 class TimeServer {
@@ -28,6 +32,14 @@ public:
          поля LastFetchedTime
          * если AskTimeServer() бросила другое исключение, пробросьте его дальше.
          */
+        try{
+            string new_str = AskTimeServer();
+            LastFetchedTime = new_str;
+            return LastFetchedTime;
+        }
+        catch(const system_error&){
+            return LastFetchedTime;
+        }
     }
     
 private:
@@ -42,12 +54,5 @@ int main() {
     } catch (exception& e) {
         cout << "Exception got: " << e.what() << endl;
     }
-    return 0;
-}
-
-
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
     return 0;
 }
