@@ -20,19 +20,18 @@ int main(int argc, const char * argv[]) {
     int number = 0;
     if(input){
         input >> N >> M;
-        cout << "Test for N and M: " << N << " " << M << endl;
+        //cout << "Test for N and M: " << N << " " << M << endl;
     }
     for(int i=0; i<N; i++){
         for(int j=0; j<M; j++){
             input >> number;
             input.ignore(1);
-            if(j==M-1)
+            if(j == M-1)
                 cout << setw(10) << number;
             else
                 cout << setw(10) << number << " ";
         }
         cout << endl;
     }
-    
     return 0;
 }
