@@ -36,13 +36,14 @@ public:
         return !s.empty() && it == s.end();
     }
     
+    //Function to read dates from input data
     void Get_dates(string& date, string& command){
         if(command != "Print"){
             stringstream date_numbers(date);
             char c1, c2;
             string c3, Day;
             date_numbers >> year >> c1 >> month >> c2 >> Day >> c3;
-            //check date format
+            //Check date format. Introduce special string Day to check the case "1-1--1", where the last number is -1, so the format is not wrong.
             if(c1!='-' || c2!='-' || c3!="" || !is_number(Day)){
                 throw runtime_error("Wrong date format: " + date);
             }
@@ -75,6 +76,8 @@ private:
     int year;
 };
 
+
+//In fact, overloading only "<" is enough
 bool operator < (const Date& lhs, const Date& rhs){
     bool result;
     if(lhs.GetYear() != rhs.GetYear()) result = lhs.GetYear() < rhs.GetYear();
@@ -101,6 +104,14 @@ bool operator > (const Date& lhs, const Date& rhs){
         }
     }
     return result;
+}
+
+//Need to overload output stream for Date class to make it easier to use cout << ...
+ostream& operator<<(ostream& stream, const Date& date) {
+    stream << setw(4) << setfill('0') << date.GetYear() <<
+    "-" << setw(2) << setfill('0') << date.GetMonth() <<
+    "-" << setw(2) << setfill('0') << date.GetDay();
+    return stream;
 }
 
 class Database {
@@ -134,38 +145,11 @@ public:
             }
     }
     
-    string Print_year(const Date& d) const{
-        stringstream s_year;
-        if(to_string(d.GetYear()).size() <= 4)
-            s_year << setfill('0') << setw(4) << d.GetYear();
-        else
-            s_year << d.GetYear();
-        return s_year.str();
-    }
-    
-    string Print_month(const Date& d) const{
-        stringstream s_month;
-        if(1 <= d.GetMonth() && d.GetMonth() < 10)
-            s_month << setfill('0') << setw(2) << d.GetMonth();
-        else
-            s_month << d.GetMonth();
-        return s_month.str();
-    }
-    
-    string Print_day(const Date& d) const{
-        stringstream s_day;
-        if(1 <= d.GetDay() && d.GetDay() < 10)
-            s_day << setfill('0') << setw(2) << d.GetDay();
-        else
-            s_day << d.GetDay();
-        return s_day.str();
-    }
-    
     void Print() const{
         for(auto m:map_events){
             for(string s:m.second){
                 if(m.first.GetYear()>=0)
-                    cout << Print_year(m.first) << "-" << Print_month(m.first) << "-" << Print_day(m.first) << " " << s << endl;
+                    cout << m.first << endl;
             }
         }
     }
