@@ -22,9 +22,9 @@ vector<int> Reversed(const vector<int>& v){
     return c;
 }
 
-/*int main(int argc, const char * argv[]) {
+int main(int argc, const char * argv[]) {
  vector<int> numbers = {1, 5, 3, 4, 2};
  Reverse(numbers);
  for(auto s : Reverse(numbers)) cout << s << " ";
  return 0;
- }*/
+ }

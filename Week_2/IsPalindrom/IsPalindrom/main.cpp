@@ -20,19 +20,19 @@ bool IsPalindrom(string w){
     return check;
 }
 
-/*int main(){
-//    string a;
-//    bool check = false;
-//    a = "gentleman";
-  //  cout << a.size() << '\t' <<  a[4] << endl;
- /*   for (int i = 0; i < a.size(); i++) {
+int main(){
+    string a;
+    bool check = false;
+    a = "gentleman";
+    cout << a.size() << '\t' <<  a[4] << endl;
+    for (int i = 0; i < a.size(); i++) {
             if(a[i] == a[a.size() - 1 -i]) check = true;
             else check = false;
-        }*/
-//    cout << check << endl;
-/*    cout << IsPalindrom("madam") << endl;
+        }
+    cout << check << endl;
+    cout << IsPalindrom("madam") << endl;
     cout << IsPalindrom("gentleman") << endl;
     cout << IsPalindrom("a") << endl;
     cout << IsPalindrom("54045") << endl;
     return 0;
-}*/
+}

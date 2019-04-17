@@ -25,18 +25,6 @@ int main(int argc, const char * argv[]) {
             }
         }
     }
-/*    for(auto c : a){
-        i++;
-        cout << "i counter = " << i << endl;
-        if (c == 'f') {
-            j++;
-            cout << "j counter = " << j << endl;
-            if (j == 2) {
-                cout << i << endl;
-                break;
-            }
-        }
-    }*/
     if (j == 0) cout << "-2" << endl;
     if (j == 1) cout << "-1" << endl;
     return 0;

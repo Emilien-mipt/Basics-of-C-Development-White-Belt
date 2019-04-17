@@ -23,7 +23,7 @@ set<string> BuildMapValuesSet(const map<int, string>& m) {
     return values;
 }
 
-/*int main(int argc, const char * argv[]) {
+/int main(int argc, const char * argv[]) {
     set<string> values = BuildMapValuesSet({
         {1, "odd"},
         {2, "even"},
@@ -36,4 +36,4 @@ set<string> BuildMapValuesSet(const map<int, string>& m) {
         cout << value << endl;
     }
     return 0;
-}*/
+}

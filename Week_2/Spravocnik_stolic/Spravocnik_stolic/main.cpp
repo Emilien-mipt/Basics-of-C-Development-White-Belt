@@ -10,34 +10,25 @@
 #include <map>
 using namespace std;
 
-////////////////////////////////////////////
 inline void about_size_0(string& string_1){
     cin >> string_1;
     cout << "Country " << string_1 << " doesn't exist" << endl;
 }
-////////////////////////////////////////////
 
-////////////////////////////////////////////
 void change_capital_size_0(string& string_1, string& string_2, map<string, string>& m){
     m[string_1] = string_2;
     cout << "Introduce new country " << string_1 << " with capital " << string_2 << endl;
 }
-////////////////////////////////////////////
 
-////////////////////////////////////////////
 inline void rename_size_0(string& string_1, string& string_2){
     cin >> string_1 >> string_2;
     cout << "Incorrect rename, skip" << endl;
 }
-////////////////////////////////////////////
 
-////////////////////////////////////////////
 inline void dump_size_0(){
     cout << "There are no countries in the world" << endl;
 }
-////////////////////////////////////////////
 
-////////////////////////////////////////////
 void about(string& string_1, map<string, string>& m){
     bool counter_country = 0;
     //for(auto counter : m){//Проверяем, есть ли такая страна
@@ -48,9 +39,7 @@ void about(string& string_1, map<string, string>& m){
         cout << "Country " << string_1 << " has capital " << m[string_1] << endl; //Если существует
     }
 }
-////////////////////////////////////////////
 
-////////////////////////////////////////////
 void change_capital(string& string_1, string& string_2, map<string, string>& m){
     bool counter_country = 0;
     //for(auto counter : m){
@@ -70,9 +59,7 @@ void change_capital(string& string_1, string& string_2, map<string, string>& m){
         }
     }
 }
-////////////////////////////////////////////
 
-////////////////////////////////////////////
 void RENAME(string& string_1, string& string_2, map<string, string>& m){
     bool counter_old_country = 0; //Проверяем, действительно ли страна old_country_name не существует
     bool counter_new_country = 0;//или страна new_country_name уже существует
@@ -95,15 +82,13 @@ void RENAME(string& string_1, string& string_2, map<string, string>& m){
         cout << "Country " << string_1 << " with capital " << capital << " has been renamed to " << string_2 << endl;
     }
 }
-////////////////////////////////////////////
 
-////////////////////////////////////////////
 void dump(map<string, string> m){
     for(auto i : m){
         cout << i.first << "/" << i.second << " ";
     }
 }
-////////////////////////////////////////////
+
 
 
 

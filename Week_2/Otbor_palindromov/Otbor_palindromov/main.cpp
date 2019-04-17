@@ -24,11 +24,6 @@ bool IsPalindrom(string w){ //Checking whether the word is palindrom
 
 vector<string> PalindromFilter(vector<string> words, int minLength){
     vector<string> b;
-/*    for (int i=0; i<words.size(); i++) {
-        if(IsPalindrom(words[i]) == true && words[i].size()>=minLength){
-            b.push_back(words[i]);
-        }
-    }*/
     for (auto s : words) {
         // если требуеые условия выполняются, добавляем s к ответу
         if (s.size() >= minLength && IsPalindrom(s) == true) {

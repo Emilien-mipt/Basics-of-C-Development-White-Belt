@@ -16,11 +16,11 @@ void MoveStrings(vector<string>& source, vector<string>& destination){
     source.clear();
 }
 
-/*int main(int argc, const char * argv[]) {
+int main(int argc, const char * argv[]) {
     vector<string> source = {"a", "b", "c"};
     vector<string> destination = {"z"};
     MoveStrings(source, destination);
     for(auto c : source) cout << c << '\t';
     for(auto d : destination) cout << d << '\t';
     return 0;
-}*/
+}

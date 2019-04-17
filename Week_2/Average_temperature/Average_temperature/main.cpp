@@ -10,31 +10,6 @@
 #include <vector>
 using namespace std;
 
-/*int average_temperature(const vector<int>& temp){ //N - number of days; vector temp - vector with temperatures for these days
-    int s = 0;
-    for(int c : temp) {
-       // cout << s;
-        s += c;
-    }
-    return s/temp.size();
-}*/
-
-/*int amount_of_days(const vector<int>& temp){ //Print out number of days
-    int K = 0;
-    for(int c : temp){
-        if(c > average_temperature(temp)) K++;
-    }
-    return K;
-}
-
-void number_of_days(const vector<int>& temp){
-    for(int j = 0; j < temp.size(); j++){
-        if(temp[j] > average_temperature(temp)){
-            cout << j << '\t';
-        }
-    }
-}*/
-
 int main(int argc, const char * argv[]) {
     int N;
     cin >> N; //number of days;
@@ -59,11 +34,5 @@ int main(int argc, const char * argv[]) {
     for(int j = 0; j < t.size(); j++){
         if(t[j] > average) cout << j << '\t';
     }
-    
-    // cout << s;
-//   average_temperature(t);
-//    cout << "srednyaa temp: "<<average_temperature(t) << endl;
-//    cout << amount_of_days(t) << endl;
-//    number_of_days(t);
     return 0;
 }

@@ -14,8 +14,8 @@
 
 using namespace std;
 
-////////////////////
-vector<string> Buses_with_stop(string& stop, map<string, vector<string>>& m){ //Функция для поиска автобусов, включающих нужную остановку
+//Функция для поиска автобусов, включающих нужную остановку
+vector<string> Buses_with_stop(string& stop, map<string, vector<string>>& m){
     vector<string> buses_with_stop;
     for(auto j : m){
         for(string item : j.second){
@@ -29,10 +29,7 @@ vector<string> Buses_with_stop(string& stop, map<string, vector<string>>& m){ //
     }
     return buses_with_stop;
 }
-////////////////////
 
-
-////////////////////
 vector<string> Buses_in_order(vector<string>& new_bus, vector<string>& buses_with_stop){
     vector<string> buses_in_order;
     for(string item_1 : new_bus){
@@ -42,10 +39,7 @@ vector<string> Buses_in_order(vector<string>& new_bus, vector<string>& buses_wit
     }
     return buses_in_order;
 }
-////////////////////
 
-
-////////////////////
 void Print_vector(vector<string> buses, string& request){
     if(buses.size() == 0){ //Упорядочиваем список автобусов, включающих в себя остановку stop
         if(request == "BUSES_FOR_STOP"){
@@ -62,7 +56,6 @@ void Print_vector(vector<string> buses, string& request){
             cout << endl;
     }
 }
-////////////////////
 
 void all_busses(map<string, vector<string>>& m){
     if(m.size() == 0){
@@ -79,15 +72,14 @@ void all_busses(map<string, vector<string>>& m){
     }
 }
 
-//////////////////////
-int find_position(vector<string>& vector_with_buses, string& needed_bus){//Функция, которая находит индекс нужного названия автобуса
+//Функция, которая находит индекс нужного названия автобуса
+int find_position(vector<string>& vector_with_buses, string& needed_bus){
     int p = 0;
     for(int k = 0; k < vector_with_buses.size(); k++){
         if(vector_with_buses[k] == needed_bus) p = k;
     }
     return p;
 }
-///////////////////////
 
 int main(int argc, const char * argv[]) {
     string request;

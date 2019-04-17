@@ -165,7 +165,7 @@ private:
 };
 
 
-/*int main(int argc, const char * argv[]) {
+int main(int argc, const char * argv[]) {
     Person person("Polina", "Sergeeva", 1960);
     for (int year : {1959, 1960}) {
         cout << person.GetFullNameWithHistory(year) << endl;
@@ -177,4 +177,4 @@ private:
         cout << person.GetFullNameWithHistory(year) << endl;
     }
     return 0;
-}*/
+}

@@ -58,8 +58,6 @@ private:
     vector<FunctionPart> parts;
 };
 
-/*
-//////////////////////////////////////////////////////////////////
 struct Image {
     double quality;
     double freshness;
@@ -92,13 +90,12 @@ double ComputeQualityByWeight(const Params& params,
     function.Invert();
     return function.Apply(weight);
 }
-////////////////////////////////////////////////////////////////////
+
 
 int main(int argc, const char * argv[]) {
     Image image = {10, 2, 6};
     Params params = {4, 2, 6};
     cout << ComputeImageWeight(params, image) << endl;
     cout << ComputeQualityByWeight(params, image, 46) << endl;
-    // insert code here...
     return 0;
 }*/

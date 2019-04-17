@@ -67,16 +67,6 @@ public:
         
         auto last_surname = unique(history_of_surnames.begin(), history_of_surnames.end());
         history_of_surnames.erase(last_surname, history_of_surnames.end());
-
-        /* //Заполняем множества, чтобы не было повторений
-        set<string> history_of_names_no_rep(begin(history_of_names), end(history_of_names));
-        set<string> history_of_surnames_no_rep(begin(history_of_surnames), end(history_of_surnames));
-        */
-        
-        /*//Обратно переводим в векторы
-        vector<string> his_names_norep = history_without_rep(history_of_names_no_rep);
-        vector<string> his_surnames_norep = history_without_rep(history_of_surnames_no_rep);
-        */
         
         if(needed_year_name == 0 && needed_year_surname == 0)
             result = "Incognito";
